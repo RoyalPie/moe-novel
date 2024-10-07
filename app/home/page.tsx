@@ -1,12 +1,18 @@
 import React from "react"; 
-import { Metadata } from "next"; 
-import Page from './'; 
+import HomeMainSlider from "../../module/components/home/HomeMainSlider";
+import HomeNewSlider from "../../module/components/home/HomeNewSlider";
+import Recommend from "../../module/components/home/Recommend";
+import NewNovel from "../../module/components/home/NewNovel";
+import FinishedNovel from "../../module/components/home/FinishedNovel";
 
-export const metadata: Metadata = {
-  title: "Moe Novel",
-  description: "Website for novel lover",
-};
-
-export default function Home1Page() {
-  return <Page />;
+export default function HomePage() {
+  return (
+    <>
+      <HomeMainSlider />
+      <HomeNewSlider/>
+      <Recommend />
+      <NewNovel />
+      <FinishedNovel />
+    </>
+  );
 }

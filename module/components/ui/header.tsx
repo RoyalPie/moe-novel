@@ -1,5 +1,5 @@
-import { Img } from "../../components/Img"; 
-import { Heading } from "../../components/Heading";
+import { Img } from "./image"; 
+import { Heading } from "./heading";
 import Link from "next/link";
 import React from "react";
 

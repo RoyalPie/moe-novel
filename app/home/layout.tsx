@@ -1,15 +1,14 @@
-import { Img } from "../../components/Img"; 
-import { Heading } from "../../components/Heading";
-import Footer from "../../components/Footer";
-import Home1ColumnOne from "./Home1ColumnOne";
-import Home1Columnrectangle from "./Home1Columnrectangle"; 
-import Home1Columntcphmhon from "./Home1Columntcphmhon"; 
-import Home1RowOne from "./Home1RowOne";
-import Home1RowTwo from "./Home1RowTwo"; 
+import { Img } from "../../module/components/ui/image"; 
+import { Heading } from "../../module/components/ui/heading";
+import Footer from "../../module/components/ui/footer";
 import Link from "next/link";
 import React from "react";
 
-export default function Home1Page() {
+export default function HomeLayout({
+  children, 
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="w-full bg-gradient">
       <header className="flex items-end justify-center bg-gray-200_4c py-1.5 shadow-xs">
@@ -76,11 +75,7 @@ export default function Home1Page() {
         </div>
       </header>
       <div className="mt-[22px]">
-        <Home1RowOne />
-        <Home1RowTwo />
-        <Home1ColumnOne />
-        <Home1Columnrectangle />
-        <Home1Columntcphmhon />
+        {children}
       </div>
       <Footer className="mt-[60px]" />
     </div>

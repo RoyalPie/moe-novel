@@ -59,7 +59,6 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
   variant = "fill",
   size,
   color = "",
-  onClick,
   ...restProps
 }) => {
   return (
